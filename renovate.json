@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "config:base",
+    ":preserveSemverRanges"
+  ],
+  "labels": [
+    "auto-update"
+  ],
+  "dependencyDashboardAutoclose": true,
+  "enabledManagers": [
+    "terraform"
+  ],
+  "automerge": true,
+  "automergeType": "pr-comment",
+  "automergeComment": "bors: r+",
+  "prCreation": "immediate",
+  "terraform": {
+    "ignorePaths": [
+      "**/context.tf",
+      "examples/**"
+    ]
+  }
+}
