@@ -15,9 +15,6 @@
     "auto-update"
   ],
   "dependencyDashboardAutoclose": true,
-  "enabledManagers": [
-    "terraform"
-  ],
   "automerge": true,
   "automergeType": "pr-comment",
   "automergeComment": "bors: r+",
