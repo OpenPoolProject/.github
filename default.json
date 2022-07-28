@@ -1,7 +1,6 @@
 {
   "extends": [
     "config:base",
-    ":preserveSemverRanges",
     ":maintainLockFilesWeekly",
     ":rebaseStalePrs",
     ":semanticCommits",
@@ -18,8 +17,11 @@
   "automerge": true,
   "automergeType": "pr-comment",
   "automergeComment": "bors: r+",
-  "prCreation": "conflicted",
-  "rebaseWhen": "behind-base-branch",
+  "prCreation": "immediate",
+  "rebaseWhen": "conflicted",
+  "pre-commit": {
+    "enabled": true
+  },
   "terraform": {
     "ignorePaths": [
       "**/context.tf",
