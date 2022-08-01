@@ -27,5 +27,14 @@
       "**/context.tf",
       "examples/**"
     ]
+  },
+  "vulnerabilityAlerts": {
+    "labels": [
+      "security"
+    ],
+    "automerge": true,
+    "assignees": [
+      "@kilpatty"
+    ]
   }
 }
